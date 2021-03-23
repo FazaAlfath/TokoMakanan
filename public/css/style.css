@@ -1,0 +1,549 @@
+*body {
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+.navbar-brand {
+    font-family: Viga, sans-serif;
+    font-size: 32px;
+    margin: 20px 0 0 10px;
+    margin-top: 2px;
+    display: flex;
+}
+
+.nav-link {
+  font-family: 'Josefin Sans', sans-serif;
+    margin-right: 30px;
+    margin: 0 0 0 10px;
+}
+
+.navbar-toggler {
+    float: right;
+    margin-top: -38px;
+}
+.nav-link:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid white;
+  width: 30%;
+  padding-bottom: 5px;
+  margin-top: -8px;
+}
+.Logo-Toko {
+  float: left;
+}
+.navbar {
+  background-color: #025955;
+}
+/* Dekstop vesion */
+@media (min-width: 992px) {
+  #navbarNavAltMarkup {
+    margin-top: -1px;
+  }
+ 
+  .navbar-brand {
+    float: left;
+    margin-top: -1px;
+  }
+  
+  .collapse {
+    float: right;
+    margin-right: 30px;
+  }
+  
+  .nav-link {
+    /* font-size: 32px; */
+    font-size: 1rem;
+    margin-right: 30px;
+  }
+  
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid white;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-top: -8px;
+  }
+  .navbar {
+    background-color: #025955;
+  }
+}
+/* Akhir-Navbar */
+
+
+/* Navbar ke 2 */
+
+#nav2 .navbar {
+  background-color: #025955;
+  margin-top: 20px;
+}
+
+#nav2 .nav-link {
+font-family: 'Josefin Sans', sans-serif;
+  margin-right: 30px;
+  margin: 0 0 0 10px;
+  color: white;
+}
+
+#nav2 .navbar-brand {
+  color: white;
+}
+
+#nav2 .dropdown-toggle {
+  display: fixed;
+}
+
+#nav2 .navbar-toggler {
+  float: right;
+  margin-top: 0px;
+}
+#nav2 .nav-link:hover::after {
+  display: none;
+}
+#nav2 .Logo-Toko {
+float: left;
+}
+/* Dekstop vesion */
+@media (min-width: 992px) {
+#navbarNavAltMarkup {
+  margin-top: -1px;
+}
+}
+/* Akhir-Navbar */
+
+/* Carousel */
+.banner {
+  -webkit-background-size:cover ;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 92vh;
+}
+
+.carousel-caption {
+  margin-bottom: 190px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.carousel-caption h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.carousel-caption a {
+  padding: 7px 15px;
+  display: inline-block;
+  margin-bottom: -50px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+
+.carousel-control-prev-icon {
+  background: rgb(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.carousel-control-next-icon {
+  background: rgb(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+/* Dekstop Mode */
+@media (min-width: 991px) {
+  .carousel-caption h2 {
+    font-size: 70px;
+  }
+
+  .banner {
+    -webkit-background-size:cover ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 93vh;
+  }
+
+  .carousel-caption a {
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px;
+  }
+}
+/* Akhir-Carousel */
+
+/* Intro-Product */
+#intro-product .card-product {
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#intro-product .text-product {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card-view {
+  margin-top: 500px;
+}
+
+
+#intro-product h3{
+  margin-top: 100px;
+  font-size: 50px;
+  text-align: center;
+  font-family: Viga, sans-serif;
+}
+#intro-product .card {
+  width: 30rem;
+  margin-top: 30px;
+}
+#intro-product .konten{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.row h2{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.inner {
+  overflow: hidden;
+  size: 100px;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.5);
+}
+@media (min-width: 991px) {
+  .inner {
+    overflow: hidden;
+  }
+
+  .inner img {
+      transition: all 1.5s ease;
+  }
+
+  .inner:hover img {
+      transform: scale(1.5);
+  }
+
+  #intro-product .card {
+    width: 20rem;
+    height: 500px;
+    margin-top: 30px;
+  }
+  /* Ngatur ukuran Font dan btn */
+ 
+  /* Akhir-Ngatur ukuran Font dan btn */
+}
+/* Akhir-Intro-Product */
+
+/* Card-Product */
+#card-product .card-product {
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#card-product .text-product {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card-view {
+  margin-top: 500px;
+}
+
+
+#card-product h3{
+  margin-top: 100px;
+  font-size: 50px;
+  text-align: center;
+  font-family: Viga, sans-serif;
+}
+#card-product .card {
+  width: 30rem;
+  margin-top: 30px;
+}
+#card-product .konten{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.row h2{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.inner {
+  overflow: hidden;
+  size: 100px;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.5);
+}
+@media (min-width: 991px) {
+  .inner {
+    overflow: hidden;
+  }
+
+  .inner img {
+      transition: all 1.5s ease;
+  }
+
+  .inner:hover img {
+      transform: scale(1.5);
+  }
+
+  #card-product .card {
+    width: 20rem;
+    height: 500px;
+    margin-top: 30px;
+  }
+  /* Ngatur ukuran Font dan btn */
+  #card-product .card-title1 {
+    margin-top: 16px;
+  }
+  #card-product .card-title2 {
+    margin-top: 20px;
+  }
+  
+  #card-product .card-title3 {
+    margin-top: -1px;
+  }
+  
+  
+  #card-product .card-text1 {
+    margin-top: 10px;
+  }
+
+  #card-product .card-text3 {
+    margin-top: -4px;
+  }
+  
+  #card-product .btn1 {
+    margin-top: 15px;
+  }
+  
+  #card-product .btn2 {
+    margin-top: -3px;
+  }
+  
+  #card-product .btn3 {
+    margin-top: 2px;
+  }
+  /* Akhir-Ngatur ukuran Font dan btn */
+}
+/* Akhir-Intro-Product */
+
+
+
+
+/* About US */
+#mu-about-us {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 100px 0;
+}
+#mu-about-us .mu-about-us-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-left {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-left h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-left ul {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-left ul li {
+  line-height: 30px;
+  list-style: circle;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-right {
+  display: inline;
+  float: left;
+  width: 100%;
+  display: block;
+  width: 100%;
+  background-color: #ccc;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-right a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-right a img {
+  width: 100%;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-right a:after {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: #ddd;
+  content: '\f04b';
+  font-family: fontAwesome;
+  font-size: 50px;
+  left: 0;
+  padding-top: 27%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+#mu-about-us .moto-toko {
+  font-family: Viga, sans-serif;
+}
+/* Akhir-About US */
+
+
+
+
+
+
+
+/* Parallax */
+#prlx .container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 25px;
+}
+
+.parallax {
+  background: url('../img/parallax/photo2.jpeg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+/* Akhir-Parallax */
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  
+    background: #025955;
+    padding: 0 0 30px 0;
+    color: #eee;
+    font-size: 14px;
+    margin-top: 50px;
+  }
+  
+  #footer .footer-top {
+    background: #0f4542;
+    padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+    margin-bottom: 30px;
+    margin-right: 40px;
+
+  }
+  
+  #footer .footer-top .footer-info h3 {
+    font-size: 34px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-family: Viga, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  #footer .footer-top .footer-info p {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ecf5ff;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+    margin-right: 40px;
+
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 8px 0;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #ecf5ff;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    color: #74b5fc;
+  }
+  
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-contact p {
+    line-height: 26px;
+  }
+  
+  #footer .footer-top .footer-newsletter {
+    margin-bottom: 30px;
+  }
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    font-family: Viga, sans-serif;
+  }
+  
+  #footer .credits {
+    text-align: center;
+    font-size: 13px;
+    color: #f1f7ff;
+  }
+  
+  #footer .credits a {
+    color: #bfddfe;
+  }
+  
+  #footer .credits a:hover {
+    color: #f1f7ff;
+  }
+          /* END */

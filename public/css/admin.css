@@ -1,0 +1,43 @@
+#form-wrap-admin{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-wrap-admin form{
+    border-radius: 4px;
+    background: #fff;
+    width: 350px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+#form-wrap-admin form .card-header{
+    background-color: #025955;
+    padding: 10px 20px;
+    font-size: 12pt;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: left;
+    border-radius: 4px 4px 0 0;
+}
+
+#form-wrap-admin form input,label, button{
+    margin: 0 20px;
+    width: 310px;
+    text-align: left;
+}
+
+#form-wrap-admin form button{
+    background: #025955;
+    color: #fff;
+}
+
+
