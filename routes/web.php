@@ -14,22 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'ProductController@index');
-Route::get('/backup', function () {
-    return view('admin/backup');
-});
+Route::get('/backup', 'ProductController@index2');
+Route::post('/', 'ProductController@search');
 
 Route::get('login', 'AdminController@login');
-Route::get('logout', 'AdminController@logout');
+Route::get('/admin-logout', 'AdminController@logout');
 Route::post('login/post', 'AdminController@login_post');
 Route::get('admin', 'AdminController@dashboard')->middleware('checklogged');
 
 // Product
 Route::get('product', 'AdminController@get_product');
 Route::post('product/post', 'ProductController@store');
-Route::get('product/{id}/edit', 'ProductController@edit');
+Route::post('buyers/post2', 'ProductController@backup');
 Route::post('product/update', 'ProductController@update');
+Route::post('buyers/update2', 'ProductController@update2');
 
 Route::get('/product/{id}/delete', 'ProductController@destroy');
+Route::get('/buyers/{id}/delete', 'ProductController@destroy2');
 Route::get('/product/{slug}', 'ProductController@detail_product');
 
 // edit
+Route::get('product/{id}/edit', 'ProductController@edit');

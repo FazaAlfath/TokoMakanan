@@ -55,10 +55,10 @@
       <div class="modal-body">
         <form action="/product/update" method="POST" id="formUpdate" enctype="multipart/form-data">
           @csrf
-          <input type="hidden" name="id" id="updtId">
+          <input type="hidden" name="id" id="updtId" >
           <div class="form-group">
               <label for="">Nama Produk</label>
-              <input type="text" name="name" id="updtName" class="form-control" placeholder="">
+              <input type="text" value="" name="name" id="updtName" class="form-control" placeholder="">
           </div>
           
           <div class="form-group">

@@ -19,12 +19,13 @@
 <div id="form-wrap-admin" class="form-group">
     <form class="text-center border border-light" action="/login/post" method="POST">
         @csrf
+    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
     <div class="card card-header">Login</div>
         <label for="username">Username</label>
-        <input type="text" class="form-control mb-4" name="username" placeholder="Username"><br>
+        <input type="text" class="form-control mb-4" value="{{ old('username') }}" required name="username" placeholder="Username"><br>
 
         <label for="password">Password</label>
-        <input type="password" id="defaultLoginFormPassword" name="password" class="form-control mb-4" placeholder="Password"><br>
+        <input type="password" id="defaultLoginFormPassword" value="{{ old('password') }}" required name="password" class="form-control mb-4" placeholder="Password"><br>
 
         <button type="submit" class="btn">Login</button>
     </form>

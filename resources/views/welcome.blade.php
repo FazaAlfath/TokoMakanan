@@ -193,7 +193,7 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">All</a>
+                            <a class="nav-link active" aria-current="page" href="/">All</a>
                           </li>
                           <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -208,7 +208,8 @@
                           </li>
                         </ul>
                         <form class="d-flex" method="POST">
-                          <input class="form-control me-2" type="text" name="keywords" autocomplete="off"  placeholder="Ex:Nasi Kebuli" aria-label="Search">
+                          @csrf
+                          <input class="form-control me-2" type="text" name="search" autocomplete="off"  placeholder="Ex:Nasi Kebuli" aria-label="Search">
                           <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                       </div>
@@ -323,11 +324,5 @@
       });
   
   </script>
-
-  <?php 
-  if (isset ($POST["search"])) {
-    $product = search($_POST["keyword"]);
-  }
-  ?>
   </body>
 </html>
